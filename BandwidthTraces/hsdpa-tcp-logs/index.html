@@ -1,0 +1,301 @@
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+</head>
+
+<body>
+
+<p>
+
+<h2>DATASET: HSDPA-bandwidth logs for mobile HTTP streaming scenarios</h2>
+
+<p>
+
+This archive contains logs from TCP streaming sessions in Telenor's
+3G/HSDPA mobile wireless network in Norway.  In each test, adaptive
+video streams were downloaded at maximum speed (no throttling, no
+buffer limit).  The video segment duration was fixed to 2 seconds.
+The tests were performed in the period 2010-09-13 to 2011-04-21.
+<p>
+Additionally, the dataset comes with an HTTP bandwidth trottling
+module for the Apache web server. This means that you can make apache
+limit the bandwidth according to the bandwidths measured in the logs
+provided here.
+
+<p><hr><h2>Available logs</h2>
+
+The logs are grouped according to their routes, and which type of
+transportation was used. Note that the
+maps are scaled in different direction in this web-page to fit into
+the table. Note also that some paths only have one measurement, i.e.,
+the bandwidth plot does not have a standard deviation. <p>
+
+<table border="1">
+<tr>
+<td><b>Transportation</b></td>
+<td><b>Start location</b></td>
+<td><b>Destination location</b></td>
+<td><b>Map</b></td>
+<td><b>Average observed bandwidth</b></td>
+<td><b>Logs</b></td>
+</tr>
+
+<tr>
+<td>Bus</td>
+<td>Ljansbakken</td>
+<td>Jernbanetorget</td>
+<td><img width="200" src="./figs/mosseveien-ljan-oslo.jpg"></td>
+<td><img width="300" src="./figs/bw_ljansbakken-jernbanetorget.png"></td>
+<td><a href="./bus.ljansbakken-oslo">LOGS</a></td>
+</tr>
+
+<tr>
+<td>Metro</td>
+<td>Kalbakken</td>
+<td>Jernbanetorget</td>
+<td><img width="200" src="./figs/map-metro.jpg"></td>
+<td><img width="300" src="./figs/bw_kalbakken-jernbanetorget.png"><p>Note that the dotted part in the
+  map is below the ground, i.e., in a tunnel. The signal strength was very low
+  and thus, consequently also the measured bandwidth.</td>
+<td><a href="./metro.kalbakken-jernbanetorget">LOGS</a></td>
+</tr>
+
+<tr>
+<td>Tram</td>
+<td>Ljabru</td>
+<td>Jernbanetorget</td>
+<td><img width="200" src="./figs/map-tram.jpg"></td>
+<td><img width="300" src="./figs/bw_ljabru-jernbanetorget.png"></td>
+<td><a href="./tram.ljabru-jernbanetorget">LOGS</a></td>
+</tr>
+
+<tr>
+<td>Tram</td>
+<td>Jernbanetorget</td>
+<td>Ljabru</td>
+<td><img width="200" src="./figs/jernbanetorget-ljabru.jpg"></td>
+<td><img width="300" src="./figs/bw_jernbanetorget-ljabru.png"></td>
+<td><a href="./tram.jernbanetorget-ljabru">LOGS</a></td>
+</tr>
+
+
+<tr>
+<td>Tram</td>
+<td>Jernbanetorget</td>
+<td>University hostpital</td>
+<td><img width="200" src="./figs/jernbanetorget-universitetsykehuset.jpg"></td>
+<td><img width="300" src="./figs/bw_jernbanetorget-universitetssykehuset.png"></td>
+<td><a href="./tram.jernbanetorget-universitetssykehuset">LOGS</a></td>
+</tr>
+
+
+<tr>
+<td>Ferry</td>
+<td>Nesoddtangen</td>
+<td>Aker brygge</td>
+<td><img width="200" src="./figs/map-ferry.jpg"></td>
+<td><img width="300" src="./figs/bw_nesodden-akerbrygge.png"></td>
+<td><a href="./ferry.nesoddtangen-oslo">LOGS</a></td>
+</tr>
+
+
+<tr>
+<td>Car</td>
+<td>Aarnes</td>
+<td>Elverum</td>
+<td><img width="200" src="./figs/elverum.jpg"></td>
+<td><img width="300" src="./figs/bw_aarnes-elverum.png"></td>
+<td><a href="./car.aarnes-elverum">LOGS</a></td>
+</tr>
+
+<tr>
+<td>Car</td>
+<td>Oslo</td>
+<td>Grimstad</td>
+<td><img width="200" src="./figs/oslo-grimstad.png"></td>
+<td><img width="300" src="./figs/bw_oslo-grimstad.png"></td>
+<td><a href="./car.oslo-grimstad">LOGS</a></td>
+</tr>
+
+<tr>
+<td>Car</td>
+<td>Snaroya</td>
+<td>Smestad</td>
+<td><img width="200" src="./figs/smestad.jpg"></td>
+<td><img width="300" src="./figs/bw_snaroya-smestad.png"></td>
+<td><a href="./car.snaroya-smestad">LOGS</a></td>
+</tr>
+
+<tr>
+<td>Train</td>
+<td>Oslo</td>
+<td>Vestby</td>
+<td><img width="200" height="300" src="./figs/oslo-vestby.jpg"></td>
+<td><img width="300" src="./figs/bw_oslo-vestby.png"></td>
+<td><a href="./train.oslo-vestby">LOGS</a></td>
+</tr>
+
+<tr>
+<td>Train</td>
+<td>Vestby</td>
+<td>Oslo</td>
+<td><img width="200" height="300" src="./figs/vestby-oslo.jpg"></td>
+<td><img width="300" src="./figs/bw_vestby-oslo.png"></td>
+<td><a href="./train.vestby-oslo">LOGS</a></td>
+</tr>
+
+
+</table>
+
+
+
+
+<p><hr><h2>Log format</h2>
+
+The logs have the following format:
+<pre>
+1289406399 549692 59.851754 10.781778 248069 1008
+1289406400 550772 59.851864 10.781833 191698 1080
+1289406401 551773 59.851964 10.781901 280579 1001
+1289406402 552893 59.85206  10.781969 248971 1120
+</pre>
+Here, the different columns have the following meaning:
+<ul>
+<li><b>Unix timestamps</b> (number of seconds since 1970-01-01) are
+  given by <i>column 1</i>.<p> 
+
+<li>A <b>monotonically increasing timestamp in milliseconds</b> since some
+  unspecified startingpoint is given by <i>column 2</i><p>
+  
+<li><b>GPS positions</b> are given by column 3 and
+  4. The <b>latitude</b> in decimal degrees is given by <i>column
+  3</i> and the <b>longitude</b> in decimal degrees is given
+  by <i>column 4</i>.<p>
+
+<li><i>Column 5</i> contains the <b>number of bytes</b> received since
+  the previous measurement (the above line).<p>
+
+<li><i>Column 6</i> contains the <b>number of milliseconds</b> elapsed
+  since the previous measurement (the above line). This is actualy the
+  difference between the values in column 2 for this and the previous line.<p>
+</ul>
+This means that for example to get kilobytes per second for a specific
+sample, divide column 5 by column 6.
+
+<p><hr><h2>HTTP bandwidth trottling module for the Apache web server</h2>
+
+To emulate
+identical network behaviour as for example measured in our bandwidth
+  logs for video streaming sessions using
+adaptive HTTP streaming, we have created a <a href="./httpthrottle.tar.gz">HTTP bandwidth trottling
+  module for Apache</a>. This module takes as input a bandwidth log, like
+the logs available in this dataset,
+that contains a single kbit/s number for
+every second of the session.  After loading the bandwidth log,
+the first HTTP request starts the session, and then, at time <i>T</i> after
+the session starts, the web server's maximum throughput for the
+next second will be <i>B(T)</i>, where <i>B(T)</i> is the bandwidth at time
+<i>T</i> in the log that was used as input to the throttling module.
+<p>
+How to install and use the trottling modile is described in the package. 
+The module requires Apache and Mod_python, and to load the module
+when Apache starts, add the following to the Apache configuration
+file:
+<pre>
+< Directory /var/www>
+        SetHandler mod_python
+        PythonHandler httpthrottle
+< /Directory>
+</pre>
+Then, copy <tt>httpthrottle.py</tt> and <tt>httpthrottle.conf</tt> to <tt>/var/www</tt>.
+<p>
+After installation, simply edit the logfile
+argument in the <tt>httpthrottle.conf</tt> file to point to the bandwidth log
+file you wish to use. Then, convert the logs into a pure kbit/s log
+using <tt>make_pure_bwlog.pl</tt> and run the apache server.
+  
+
+<p><hr><h2>If you use our dataset or trottling module, please cite the
+dataset</h2>
+
+If you use our dataset, please site the dataset, e.g., using the
+  TOMCCAP paper or MMSys dataset paper listed below.
+
+<p><hr><h2>Publications where the logs are used:</h2>
+
+These bandwidth measurements are used in several publications, including:
+
+<ul>
+
+<li><tt>
+<i><b>"Commute Path Bandwidth Traces from 3G Networks: Analysis and
+    Applications"</b></i> (dataset)<br> 
+Haakon Riiser, Paul Vigmostad, Carsten Griwodz,
+P&aring;l Halvorsen<br>
+Proceedings of the International Conference on Multimedia Systems
+(MMSys), Oslo, Norway, Feruary/March 2013, pp. 114-118  <br>
+[<a href="http://home.ifi.uio.no/paalh/publications/files/mmsys2013-dataset.pdf">pdf</a>]
+</tt><p> 
+
+
+<li><tt>
+<i><b>"Video Streaming Using a Location-based Bandwidth-Lookup Service
+for Bitrate Planning"</b></i><br> Haakon Riiser, Tore Endestad, Paul
+Vigmostad, Carsten Griwodz, P&aring;l Halvorsen<br> ACM Transactions
+on Multimedia Computing, Communications and Applications (TOMCCAP),
+Vol. 8, No. 3, July 2012, Article No. 24 (accepeted for publication
+February 2011) <br>
+[<a href="http://home.ifi.uio.no/paalh/publications/files/tomccap-bw-lookup.pdf">pdf</a>]
+[<a href="http://dx.doi.org/10.1145/2240136.2240137">DOI:
+10.1145/2240136.2240137</a>]
+</tt><p> 
+
+<li><tt>
+<i><b>"A Comparison of Quality Scheduling in Commercial Adaptive HTTP
+Streaming Solutions on a 3G Network"</b></i><br> Haakon Riiser,
+H&aring;kon S. Bergsaker, Paul Vigmostad, Carsten Griwodz, P&aring;l
+Halvorsen<br> Proceeding of the ACM Workshop on Mobile Video (MoVid),
+Chapel Hill, NC, USA, February 2012, pp. 25-30<br>
+[<a href="http://home.ifi.uio.no/paalh/publications/files/movid2012.pdf">pdf</a>]
+</tt><p>
+
+<li><tt>
+<i><b>"Bitrate and video quality planning for mobile streaming
+scenarios using a GPS-based bandwidth lookup service"</b></i><br>
+Haakon Riiser, Paul Vigmostad, Carsten Griwodz, P&aring;l
+Halvorsen<br> Proceedings of the IEEE International Conference on
+Multimedia and Expo (ICME), Barcelona, Spain, July 2011<br>
+[<a href="http://home.ifi.uio.no/paalh/publications/files/icme2011.pdf">pdf</a>]
+[<a href="http://dx.doi.org/10.1109/ICME.2011.6012045">DOI:
+10.1109/ICME.2011.6012045</a>]
+</tt><p> 
+
+<li><tt>
+<i><b>"Demo: Quality-Adaptive Video Streaming With Dynamic Bandwidth
+Aggregation on Roaming, Multi-Homed Clients" (demo)</b></i><br>
+Kristian Evensen, Andreas Petlund, Haakon Riiser, Paul Vigmostad,
+Dominik Kaspar, Carsten Griwodz, P&aring;l Halvorsen<br> Proceedings
+of the ACM International Conference on Mobile Systems, Applications
+and Services (MobiSys), Washington, DC, USA, June/July 2011,
+pp. 355-356<br>
+[<a href="http://home.ifi.uio.no/paalh/publications/files/mobisys11-demo.pdf">pdf</a>]
+</tt><p> 
+
+<li><tt>
+<i><b>"Mobile Video Streaming Using Location-Based Network Prediction
+and Transparent Handover"</b></i><br> Kristian Evensen, Andreas
+Petlund, Haakon Riiser, Paul Vigmostad, Dominik Kaspar, Carsten
+Griwodz, P&aring;l Halvorsen<br> Proceedings of the International
+Workshop on Network and Operating Systems Support for Digital Audio
+and Video (NOSSDAV), Vancouver, British Columbia, Canada, June 2011,
+pp. 21-26<br>
+[<a href="http://home.ifi.uio.no/paalh/publications/files/nossdav2011.pdf">pdf</a>]
+</tt><p> 
+
+</ul>
+
+
+
+
+</body></html>
