@@ -27,7 +27,7 @@
   <li> Of all other tools, we found TC convenient at the bandwidth range we are working. </li>
 </ul>
 <p> The comparision for different throttling tools across different bandwidths is captured below: </p>
-<pre>                                     |<img src= images/crop_graph.jpg >| </pre>
+<pre>                                 |<img src= images/crop_graph.jpg >| </pre>
 
 <b><h2>Rate Adaption Algorithms</b></h2>
  <ul>
@@ -41,7 +41,7 @@
 
 
 <b><h2>Flow Chart</b></h2>
-<pre>                                    |<img src= "flowchart.png" width="500" height="500" >| </pre>
+<pre>                          |<img src= "flowchart.png" width="500" height="500" >| </pre>
 
 <b><h2>Experimental Setup</b></h2>
 <ul>
