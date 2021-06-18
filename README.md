@@ -27,9 +27,9 @@
   <li> Of all other tools, we found TC convenient at the bandwidth range we are working. </li>
 </ul>
 <p> The comparision for different throttling tools across smaller bandwidths is captured below: </p>
-<pre>                                 |<img src= images/SmallerBandwidth.JPG.jpg >| </pre>
+<pre>                                 |<img src= images/SmallerBandwidth.JPG>| </pre>
 <p> The comparision for different throttling tools across smaller bandwidths is captured below: </p>
-<pre>                                 |<img src= images/crop_graph.jpg >| </pre>
+<pre>                                 |<img src= images/crop_graph.jpg>| </pre>
 
 <b><h2>Rate Adaption Algorithms</b></h2>
  <ul>
@@ -48,7 +48,7 @@
 <b><h2>Experimental Setup</b></h2>
 <ul>
   <li> We considered HSDPA bandwidth logs for throttling our client-server link. We considered three different bandwidth trace logs, collected using different mode of transportation: bus, tram and ferry </li>
-  <pre> |<img src= "images/BandwidthTracesForBus.JPG" width="auto" height="250" >|img src= "images/BandwidthTracesForTram.JPG" height="250" >|<img src= "images/BandwidthTracesForFerry.JPG" height="250" >|</pre>
+  <pre> |<img src= "images/BandwidthTracesForBus.JPG" width="auto" height="250" >|<img src= "images/BandwidthTracesForTram.JPG" height="250" >|<img src= "images/BandwidthTracesForFerry.JPG" height="250" >|</pre>
   <li> For evaluating objective QOE metrics, we chose Big Buck Bunny 10 seconds as our DASH video dataset. It contains 60 segments, each segment is of 10 second duration and has a total of 20 representations. </li>
   <li> The emulation testbed is based on a client-server model, where in, the link is throttled at the server as per the bandwidth trace logs considered, and client is equipped with a player capable of streaming DASH content. </li>
   <li> Depending on the rate adaptation algorithm employed and the bandwidth of the link, the player queries the server for a particular representation of the new segment.</li>
@@ -60,15 +60,15 @@
    <ul>
       <li>We evaluated bitrate switching events, number of re-buffering events, startup delay, time taken to reach highest bitrate and average bitrate perceived for a single client-server based throttling using three varied bandwidth traces.</li>
       <li>The below graphs show our results in a bar plot for each objective QoE metric for three different trace logs.</li>
-      <pre> |<img src= "images/NumberofRebufferingEvents.JPG" width="auto" height="250" >|   |img src= "images/AverageBitratePerceived.JPG" height="250" ></pre>
-      <pre> |<img src= "images/StartupDelay.JPG" height="250" >|   |<img src= "images/BitrateSwitchingEvents.JPG" height="250" >|</pre>
+      <pre> |<img src= "images/NumberofRebufferingEvents.JPG" width="auto" height="250" >||<img src= "images/AverageBitratePerceived.JPG" height="250" ></pre>
+      <pre> |<img src= "images/StartupDelay.JPG" height="250" >||<img src= "images/BitrateSwitchingEvents.JPG" height="250" >|</pre>
       <li>We also evaluated objective QoE metrics for shared bottleneck scenarios too.</li>
       <li>The below graphs show our results in a bar plot for each objective QoE metric for a single trace log.</li>
-      <pre> |<img src= "images/NumberOfRebufferingEventsSharedBottleneckScenario.JPG" width="auto" height="250" >|   |img src= "images/AverageBitratePerceivedSharedBottleneckScenario.JPG" height="250" ></pre>
-      <pre> |<img src= "images/StartupDelaySharedBottleNeckScenario.JPG" height="250" >|   |<img src= "images/NumberofBitrateEventsSharedBottleneckScenario.JPG" height="250" >|</pre>
+      <pre> |<img src= "images/NumberOfRebufferingEventsSharedBottleneckScenario.JPG" width="auto" height="250" >||<img src= "images/AverageBitratePerceivedSharedBottleneckScenario.JPG" height="250" ></pre>
+      <pre> |<img src= "images/StartupDelaySharedBottleNeckScenario.JPG" height="250" >||<img src= "images/NumberofBitrateEventsSharedBottleneckScenario.JPG" height="250" >|</pre>
       <li>The next few graphs depicts the segment representations of different algorithms for above considered scenarios.</li>
-      <pre> |<img src= "images/VideoBitratesForTram.JPG" width="auto" height="250" >|   |img src= "images/VideoBitrateSharedBottleneckScenario.JPG" height="250" ></pre>
-      <pre> |<img src= "images/VideoBitratesForFerry.JPG" height="250" >|   |<img src= "images/VIdeoBitrateForBus.JPG" height="250" >|</pre>
+      <pre> |<img src= "images/VideoBitratesForTram.JPG" width="auto" height="250" >||<img src= "images/VideoBitrateSharedBottleneckScenario.JPG" height="250" ></pre>
+      <pre> |<img src= "images/VideoBitratesForFerry.JPG" height="250" >||<img src= "images/VIdeoBitrateForBus.JPG" height="250" >|</pre>
       <li>We also evaluated objective QoE metrics for shared bottleneck scenarios too.</li>
    </ul>
    
