@@ -48,7 +48,7 @@
 <b><h2>Experimental Setup</b></h2>
 <ul>
   <li> We considered HSDPA bandwidth logs for throttling our client-server link. We considered three different bandwidth trace logs, collected using different mode of transportation: bus, tram and ferry </li>
-  <pre> |<img src= "images/BandwidthTracesForBus.JPG" width="150" height="150" >|<img src= "images/BandwidthTracesForTram.JPG" width="150" height="150" >|<img src= "images/BandwidthTracesForFerry.JPG" width="150" height="150" >| </pre>
+  <pre> |<img src= "images/BandwidthTracesForBus.JPG" width="auto" height="150" >|             <img src= "images/BandwidthTracesForTram.JPG" height="150" >|           <img src= "images/BandwidthTracesForFerry.JPG" height="150" >| </pre>
   <li> For evaluating objective QOE metrics, we chose Big Buck Bunny 10 seconds as our DASH video dataset. It contains 60 segments, each segment is of 10 second duration and has a total of 20 representations. </li>
   <li> The emulation testbed is based on a client-server model, where in, the link is throttled at the server as per the bandwidth trace logs considered, and client is equipped with a player capable of streaming DASH content. </li>
   <li> Depending on the rate adaptation algorithm employed and the bandwidth of the link, the player queries the server for a particular representation of the new segment.</li>
